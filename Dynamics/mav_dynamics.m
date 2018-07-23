@@ -149,7 +149,7 @@ function sys=mdlDerivatives(t,x,uu,P)
     tau7=(P.Jx*(P.Jx -P.Jy)+P.Jxz*P.Jxz)/tau;
     tau8=P.Jx/tau;
   
-    pndot = cos(theta)*cos(psi)*u+(sin(phi)*sin(theta)*cos(psi)-cos(theta)*sin(phi))*v+(cos(phi)*sin(theta)*cos(psi)+sin(phi)*sin(psi))*w;
+    pndot = cos(theta)*cos(psi)*u+(sin(phi)*sin(theta)*cos(psi)-cos(phi)*sin(psi))*v+(cos(phi)*sin(theta)*cos(psi)+sin(phi)*sin(psi))*w;
     pedot = cos(theta)*sin(psi)*u+(sin(phi)*sin(theta)*sin(psi)+cos(psi)*cos(phi))*v+(cos(phi)*sin(theta)*sin(psi)-sin(phi)*cos(psi))*w;
     pddot = -sin(theta)*u+sin(phi)*cos(theta)*v+cos(phi)*cos(theta)*w;
     udot = r*v-q*w+fx/mass;
